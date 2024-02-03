@@ -8,7 +8,7 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  output:'server',
+  output:'static',
   site:'http://kwame121.github.io',
   adapter:node({
     mode:'standalone'
