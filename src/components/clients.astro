@@ -5,56 +5,21 @@ import type { CompatibilityItem } from "~/types";
 
 const frameworks: Array<CompatibilityItem> = [
   {
-    title: "React",
-    icon: "frameworks/react",
-    url: "https://reactjs.org/",
+    title: "Ghana Enterprise Agency",
+    icon: "organizations/gealogo",
+    url: "https://gea.gov.gh/",
   },
   {
-    title: "NodeJS",
-    icon: "frameworks/nodejs",
-    url: "https://nodejs.org/en",
+    title: "Ministry of Education",
+    icon: "organizations/coatofarms",
+    url: "https://moe.gov.gh/",
   },
   {
-    title: "React Native",
-    icon: "frameworks/reactnative",
-    url: "https://reactnative.dev/",
-  },
-  {
-    title: "CSS",
-    icon: "frameworks/css",
-    url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-  },
-  {
-    title: "HTML",
-    icon: "frameworks/html",
-    url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-  },
-  {
-    title: "Javascript",
-    icon: "frameworks/javascript",
-    url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-  },
-  {
-    title: "Typescript",
-    icon: "frameworks/typescript",
-    url: "https://www.typescriptlang.org/",
-  },
-  {
-    title: "Python",
-    icon: "frameworks/python",
-    url: "https://www.python.org/",
-  },
-  {
-    title: "Tensorflow",
-    icon: "frameworks/tensorflow",
-    url: "https://www.tensorflow.org/",
+    title: "Youstart Initiative",
+    icon: "organizations/youstart",
+    url: "https://gea.gov.gh/youstart/",
   },
 
-  {
-    title: "Git",
-    icon: "frameworks/git",
-    url: "https://git-scm.com/",
-  },
   // {
   //   title: "Svelte",
   //   icon: "frameworks/svelte",
@@ -111,16 +76,16 @@ const platforms: Array<CompatibilityItem> = [
 ];
 ---
 
-<ContentSection title="Skills" id="compatibility">
+<ContentSection title="Clients" id="clients">
   <Fragment slot="lead">
-    These are some of the <span class="text-primary"> technologies</span> I am
-    familiar with{" "}
+    These are some of the <span class="text-primary"> organizations</span> I
+    have worked with{" "}
     <!-- <span class="text-primary">framework</span>
      and deploy to your favorite <span class="text-primary">platform</span>. -->
   </Fragment>
   <CompatibilityList
     items={frameworks}
-    title="Technologies"
+    title="Organizations"
     url="https://docs.astro.build/core-concepts/framework-components/"
   />
   <!-- <CompatibilityList

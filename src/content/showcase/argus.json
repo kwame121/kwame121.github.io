@@ -1,0 +1,7 @@
+{
+  "title": "ARGUS",
+  "image": "/src/content/showcase/_images/argus4.png",
+  "url": "http://bit.ly/kwame121",
+  "description":"ARGUS is a web application I built that uses convolutional neural networks to detect signs of small scale mining activity from satellite photography",
+  "featured": 3
+}

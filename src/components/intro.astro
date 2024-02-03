@@ -1,31 +1,55 @@
 ---
 import { Icon } from "astro-icon";
 import ContentSection from "~/components/content-section.astro";
+import MyImage from "~/assets/kwame.png";
+import { Picture } from "@astrojs/image/components";
+import CV from "~/assets/cv.pdf";
 ---
 
-<ContentSection title="Just ship less" id="intro">
-  <Icon slot="eyebrow" name="logomark" class="h-32" />
+<ContentSection title="About Me" id="intro">
+  <!-- <Icon slot="eyebrow" name="logomark" class="h-32" /> -->
+
+  <!-- <Fragment slot="lead"> -->
+  <!-- <span class="text-primary">Bio</span> -->
+  <!-- <span class="text-primary">Explore</span> what's possible and get{" "}
+    <span class="text-primary">inspired</span>. -->
+  <!-- </Fragment> -->
+
   <Fragment slot="lead">
-    Astro is a new kind of site builder for the
-    <span class="text-primary">modern</span> web.
-    <span class="text-primary">Lightning-fast</span>
-     performance meets <span class="text-primary">powerful</span> developer
-    experience.
+    <Picture
+      class="mt-5 w-64 rounded-full grayscale hover:cursor-pointer hover:grayscale-0"
+      src={MyImage}
+      widths={[600]}
+    />
+    <div class="text-md px1 sm:px-10">
+      Hi, I'm Kwame Adaboh, a dedicated software engineer with four years of
+      professional experience in the field. In my role as a Frontend Engineer at
+      Moonsquare Ltd, I excel in the ever-evolving tech landscape, working on a
+      variety of projects from private ventures to public sector initiatives.
+      Beyond my professional work, I'm deeply passionate about exploring the
+      intersection of technology, machine learning, and augmented reality to
+      develop innovative solutions that address societal issues. My side
+      projects in these areas reflect my commitment to leveraging technology for
+      positive change. Whether it's creating machine learning models for data
+      analysis or developing augmented reality applications, I'm driven by the
+      potential to make a meaningful impact on our world.
+    </div>
   </Fragment>
-  <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+  <div class="grid grid-cols-1 gap-2 sm:grid-cols-1">
     <a
-      href="https://docs.astro.build/"
+      href={CV}
+      target="_blank"
       class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
     >
       <Icon pack="mdi" name="telescope" class="h-8" />
-      <span>Read the docs</span>
+      <span>My Resume</span>
     </a>
-    <a
+    <!-- <a
       href="https://astro.new/"
       class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
     >
       <Icon pack="mdi" name="rocket" class="h-8" />
       <span>Try it out</span>
-    </a>
+    </a> -->
   </div>
 </ContentSection>

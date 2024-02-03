@@ -1,7 +1,9 @@
 ---
 import { Picture } from "@astrojs/image/components";
 import { Icon } from "astro-icon";
-import astronautImage from "~/assets/astronaut.png";
+import astronautImage from "~/assets/astronaut3.png";
+import matrix from "~/assets/matrix.png";
+import fractal from "~/assets/fractal1.png";
 import HeroImage from "~/components/hero-image.astro";
 import Starfield from "~/components/starfield.astro";
 import GitHubCorner from "./github-corner.astro";
@@ -12,7 +14,7 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
 
 <section class="relative h-full bg-black">
   <Starfield />
-  <GitHubCorner />
+  <!-- <GitHubCorner /> -->
   <div id="splash-bg-fallback" class="absolute inset-0 hidden opacity-40">
     <HeroImage />
   </div>
@@ -20,13 +22,16 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
     <h2
       class="flex flex-col gap-2 self-end sm:gap-4 sm:self-auto sm:justify-self-end"
     >
-      <Icon name="logomark" class="h-24 text-white md:h-32" />
+      <!-- <Icon name="logomark" class="h-24 text-white md:h-32" /> -->
       <div
         class="gradient-text text-center font-extrabold tracking-tighter text-8xl"
       >
-        Build fast
-        <br /> websites,
-        <br /> faster.
+        Hi, I am Kwame.
+        <!-- <br /> websites,
+        <br /> faster. -->
+      </div>
+      <div class="text-center text-white">
+        Software Developer - Tech Enthusiast - Nerd
       </div>
     </h2>
     <div
@@ -34,7 +39,7 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
       class="w-2/3 max-w-3xl self-start sm:w-10/12 sm:self-auto sm:justify-self-start"
     >
       <Picture
-        class="h-full w-full object-cover"
+        class="ml-5 h-full w-full object-cover"
         src={astronautImage}
         widths={widths}
         sizes={sizes}
